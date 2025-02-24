@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiến thức C++</title>
+    <link rel="stylesheet" href="kt.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="../logo.jpg" alt="Logo" class="logo"></li>
+                <li><a href="../home.html">Trang chủ</a></li>
+                <li><a href="kt.html">Kiến thức</a></li>
+                <li><a href="#exercises">Bài tập</a></li>
+                <li><a href="#resources">Tài nguyên</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="knowledge">
+        <h2>Kiến thức về C++</h2>
+        
+        <!-- Giới thiệu về C++ -->
+        <article>
+            <h3>Giới thiệu về C++</h3>
+            <p>C++ là một ngôn ngữ lập trình đa năng, mạnh mẽ, và được sử dụng rộng rãi trong nhiều lĩnh vực như phát triển phần mềm hệ thống, ứng dụng game, và ứng dụng nhúng. C++ là một ngôn ngữ có khả năng kiểm soát bộ nhớ chi tiết, hỗ trợ lập trình hướng đối tượng (OOP), và cho phép tối ưu hóa hiệu suất cao.</p>
+            <img src="cpp_overview.jpg" alt="C++ Overview" class="example-image">
+        </article>
+        
+        <!-- Các khái niệm cơ bản -->
+        <article>
+            <h3>Các khái niệm cơ bản trong C++</h3>
+            <p>Để bắt đầu lập trình với C++, bạn cần hiểu các khái niệm cơ bản như:</p>
+            <ul>
+                <li><strong>Biến và kiểu dữ liệu</strong>: Biến là đại diện cho các giá trị trong chương trình. C++ hỗ trợ nhiều kiểu dữ liệu như `int`, `float`, `double`, `char`, v.v.</li>
+                <li><strong>Câu lệnh điều kiện (if, else)</strong>: Sử dụng để quyết định hành động tiếp theo trong chương trình dựa trên điều kiện.</li>
+                <li><strong>Các vòng lặp (for, while)</strong>: Giúp lập trình viên lặp lại một khối mã lệnh nhiều lần, ví dụ như tính tổng các số trong dãy số.</li>
+                <li><strong>Hàm</strong>: C++ hỗ trợ việc chia nhỏ chương trình thành các hàm để dễ quản lý và tái sử dụng mã nguồn.</li>
+            </ul>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Type</th>
+                        <th>Minimum Size</th>
+                        <th>Note</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>boolean</td>
+                        <td>bool</td>
+                        <td>1 byte</td>
+                        <td>May be signed or unsigned</td>
+                    </tr>
+                    <tr>
+                        <td>character</td>
+                        <td>char</td>
+                        <td>1 byte</td>
+                        <td>May be signed or unsigned</td>
+                    </tr>
+                    <tr>
+                        <td>character</td>
+                        <td>wchar_t</td>
+                        <td>2 bytes</td>
+                        <td>C++11 type</td>
+                    </tr>
+                    <tr>
+                        <td>character</td>
+                        <td>char16_t</td>
+                        <td>2 bytes</td>
+                        <td>C++11 type</td>
+                    </tr>
+                    <tr>
+                        <td>character</td>
+                        <td>char32_t</td>
+                        <td>4 bytes</td>
+                        <td>C++11 type</td>
+                    </tr>
+                    <tr>
+                        <td>integer</td>
+                        <td>short</td>
+                        <td>2 bytes</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>integer</td>
+                        <td>int</td>
+                        <td>2 bytes</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>integer</td>
+                        <td>long</td>
+                        <td>4 bytes</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>integer</td>
+                        <td>long long</td>
+                        <td>8 bytes</td>
+                        <td>C99/C++11 type</td>
+                    </tr>
+                    <tr>
+                        <td>floating point</td>
+                        <td>float</td>
+                        <td>4 bytes</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>floating point</td>
+                        <td>double</td>
+                        <td>8 bytes</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>floating point</td>
+                        <td>long double</td>
+                        <td>8 bytes</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <!-- Lập trình hướng đối tượng -->
+        <article>
+            <h3>Lập trình hướng đối tượng (OOP) trong C++</h3>
+            <p>Lập trình hướng đối tượng là một phương pháp phát triển phần mềm giúp tổ chức mã nguồn thành các đối tượng và lớp. C++ hỗ trợ các tính năng OOP như kế thừa, đóng gói, và đa hình.</p>
+            <pre><code>
+ Ví dụ minh họa về lớp và đối tượng trong C++
+#include <iostream>
+using namespace std;
+
+class HinhVuong {
+public:
+    int canh;
+    void dienTich() {
+        cout << "Diện tích Hình Vuông: " << canh * canh << endl;
+    }
+};
+
+int main() {
+    HinhVuong hv;
+    hv.canh = 5;
+    hv.dienTich();
+    return 0;
+}
+            </code></pre>
+            <a href="https://youtu.be/L-BabT96Zmk?si=LhAXfwPt_dCUKCt9" target="_blank">Bài học liên quan</a>
+        </article>
+
+        <!-- Quản lý bộ nhớ -->
+        <article>
+            <h3>Quản lý bộ nhớ trong C++</h3>
+            <p>C++ cho phép lập trình viên kiểm soát bộ nhớ thông qua con trỏ, giúp tăng hiệu suất và kiểm soát tài nguyên hệ thống. Tuy nhiên, quản lý bộ nhớ thủ công cũng có thể dẫn đến lỗi nếu không cẩn thận.</p>
+            <pre><code>
+ Ví dụ minh họa về con trỏ trong C++
+#include <iostream>
+using namespace std;
+
+int main() {
+    int* ptr;
+    int a = 10;
+    ptr = &a;  // Lấy địa chỉ của a
+    cout << "Giá trị của a qua con trỏ: " << *ptr << endl;
+    return 0;
+}
+            </code></pre>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kiến thức C++</p>
+    </footer>
+</body>
+</html>
