@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tài nguyên C++</title>
+    <title>Kiến thức C++</title>
     <link rel="stylesheet" href="tn.css">
 </head>
 <body>
@@ -11,9 +11,9 @@
         <nav>
             <ul>
                 <li><img src="../logo.jpg" alt="Logo" class="logo"></li>
-                <li><a href="../home.html">Trang chủ</a></li>
-                <li><a href="kt.html">Kiến thức</a></li>
-                <li><a href="#exercises">Bài tập</a></li>
+                <li><a href="../index.html">Trang chủ</a></li>
+                <li><a href="../kienthuc/kt.html">Kiến thức</a></li>
+                <li><a href="../baitap/bt.html">Bài tập</a></li>
                 <li><a href="#resources">Tài nguyên</a></li>
             </ul>
         </nav>
@@ -22,34 +22,142 @@
     <main>
         <section id="resources">
             <h2>Tài nguyên học C++</h2>
-            <p>Chọn bài giảng mà bạn muốn học:</p>
-            
-            <!-- Danh sách cuộn xuống -->
-            <select id="lectures" name="lectures" class="resource-select" onchange="updateVideo()">
-                <option value="lesson1">Bài giảng 1: Giới thiệu về C++</option>
-                <option value="lesson2">Bài giảng 2: Các khái niệm cơ bản</option>
-                <option value="lesson3">Bài giảng 3: Cấu trúc điều kiện và vòng lặp</option>
-                <option value="lesson4">Bài giảng 4: Quản lý bộ nhớ và con trỏ</option>
-                <option value="lesson5">Bài giảng 5: Lập trình hướng đối tượng trong C++</option>
-            </select>
 
-            <!-- Nút để xem bài giảng -->
-            <button onclick="showSelectedLesson()">Xem bài giảng</button>
+            <div class="resource-block">
+                <h3>1. Thuật toán tìm kiếm (Searching Algorithms)</h3>
+                <ul>
+                    <li><a href="https://blog.28tech.com.vn/c-thuat-toan-tim-kiem-tuyen-tinh">Tìm kiếm tuyến tính (Linear Search)</a></li>
+                    <li><a href="https://wiki.vnoi.info/algo/basic/Binary-Search">Tìm kiếm nhị phân (Binary Search) - Chỉ áp dụng cho danh sách đã sắp xếp</a></li>
+                    <li><a href="https://vietjack.com/cau-truc-du-lieu-va-giai-thuat/giai-thuat-tim-kiem-noi-suy.jsp">Tìm kiếm nội suy (Interpolation Search)</a></li>
+                    <li><a href="https://phattrienphanmem123az.com/thuat-toan-lap-trinh/thuat-toan-jump-search.html">Tìm kiếm theo nhảy (Jump Search)</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/fibonacci-search/">Tìm kiếm Fibonacci (Fibonacci Search)</a></li>
+                </ul>
+            </div>
+
+            <div class="resource-block">
+                <h3>2. Thuật toán sắp xếp (Sorting Algorithms)</h3>
+                <ul>
+                    <li><a href="https://viblo.asia/p/thuat-toan-sap-xep-noi-bot-bubble-sort-m68Z0exQlkG">Sắp xếp nổi bọt (Bubble Sort)</a></li>
+                    <li><a href="https://codelearn.io/sharing/cac-thuat-toan-sap-xep-trong-cpp">Sắp xếp chọn (Selection Sort)</a></li>
+                    <li><a href="https://vietjack.com/cau-truc-du-lieu-va-giai-thuat/giai-thuat-sap-xep-chen.jsp">Sắp xếp chèn (Insertion Sort)</a></li>
+                    <li><a href="https://viblo.asia/p/thuat-toan-sap-xep-nhanh-quick-sort-eW65G6ROlDO">Sắp xếp nhanh (Quick Sort)</a></li>
+                </ul>
+            </div>
+
+            <div class="resource-block">
+                <h3>3. Thuật toán chia để trị (Divide and Conquer)</h3>
+                <ul>
+                    <li><a href="https://www.geeksforgeeks.org/merge-sort/">Merge Sort</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Quicksort">Quick Sort</a></li>
+                    <li><a href="https://rcoh.me/posts/linear-time-median-finding/">Tìm phần tử lớn thứ k (Median of Medians)</a></li>
+                    <li><a href="https://www.tpointtech.com/strassens-matrix-multiplication">Nhân ma trận Strassen</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/cpp-binary-search/">Tìm kiếm nhị phân (Binary Search)</a></li>
+                </ul>
+            </div>
+
+            <div class="resource-block">
+                <h3>4. Thuật toán tham lam (Greedy Algorithms)</h3>
+                <ul>
+                    <li><a href="https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-priority_queue-stl/">Dijkstra (Tìm đường đi ngắn nhất)</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/">Kruskal (Tìm cây khung nhỏ nhất)</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/">Prim (Tìm cây khung nhỏ nhất)</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/huffman-coding-greedy-algo-3/">Huffman Coding (Nén dữ liệu)</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/activity-selection-problem-greedy-algo-1/">Activity Selection Problem (Chọn hoạt động tối ưu)</a></li>
+                </ul>
+            </div>
+            
+
+            <div class="resource-block">
+                <h3>5. Thuật toán quy hoạch động (Dynamic Programming - DP)</h3>
+                <ul>
+                    <li><a href="https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/">Fibonacci tối ưu</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/">Knapsack Problem (Bài toán cái túi)</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/">Longest Common Subsequence (LCS)</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/longest-increasing-subsequence-dp-3/">Longest Increasing Subsequence (LIS)</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/matrix-chain-multiplication-dp-8/">Matrix Chain Multiplication</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/">Bellman-Ford (Đường đi ngắn nhất)</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/">Floyd-Warshall (Đường đi ngắn nhất giữa mọi cặp đỉnh)</a></li>
+                </ul>
+            </div>
+            
+
+            <div class="resource-block">
+                <h3>6. Thuật toán đồ thị (Graph Algorithms)</h3>
+                <ul>
+                    <li><a href="https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/">Duyệt đồ thị DFS (Depth First Search)</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/">Duyệt đồ thị BFS (Breadth First Search)</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-priority_queue-stl/">Dijkstra (Tìm đường đi ngắn nhất từ một đỉnh)</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/">Bellman-Ford (Tìm đường đi ngắn nhất với trọng số âm)</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/">Floyd-Warshall (Tìm đường đi ngắn nhất giữa mọi cặp đỉnh)</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/">Prim (Cây khung nhỏ nhất - MST)</a> & 
+                        <a href="https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/">Kruskal (Cây khung nhỏ nhất - MST)</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/topological-sorting/">Topological Sorting (Sắp xếp thứ tự topo trong đồ thị có hướng)</a></li>
+                </ul>
+            </div>
+            
+
+            <div class="resource-block">
+                <h3>7. Thuật toán lý thuyết số (Number Theory)</h3>
+                <ul>
+                    <li><a href="https://www.geeksforgeeks.org/euclidean-algorithms-basic-and-extended/">Ước số chung lớn nhất (GCD - Euclidean Algorithm)</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/lcm-of-given-array-elements/">Bội số chung nhỏ nhất (LCM)</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/sieve-of-eratosthenes/">Kiểm tra số nguyên tố (Sieve of Eratosthenes)</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/exponential-squaring-fast-modulo-multiplication/">Lũy thừa nhanh (Fast Exponentiation)</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/prime-factorization-using-sieve-olog-n-multiple-queries/">Phân tích thừa số nguyên tố</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/multiplicative-inverse-under-modulo-m/">Thuật toán modulo nghịch đảo</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/eulers-totient-function/">Hàm Euler (Euler’s Totient Function)</a></li>
+                </ul>
+            </div>
+            
+
+            <div class="resource-block">
+                <h3>8. Thuật toán chuỗi (String Algorithms)</h3>
+                <ul>
+                    <li><a href="https://www.geeksforgeeks.org/kmp-algorithm-for-pattern-searching/">KMP Algorithm (Knuth-Morris-Pratt)</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching/">Rabin-Karp (Tìm kiếm chuỗi con)</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/z-algorithm-linear-time-pattern-searching-algorithm/">Z-Algorithm (Tìm mẫu trong chuỗi)</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/aho-corasick-algorithm-pattern-searching/">Aho-Corasick (Tìm kiếm nhiều mẫu chuỗi)</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/suffix-array-set-1-introduction/">Suffix Array & Suffix Tree (Tìm kiếm chuỗi hiệu quả)</a></li>
+                </ul>
+            </div>
+            
+
+            
+            <div class="resource-block">
+                <h3>9. Thuật toán hình học (Computational Geometry)</h3>
+                <ul>
+                    <li><a href="https://www.geeksforgeeks.org/convex-hull-using-graham-scan/">Thuật toán Graham’s scan (Tìm bao lồi - Convex Hull)</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/area-of-a-polygon-with-given-n-ordered-vertices/">Tính diện tích đa giác</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/how-to-check-if-a-given-point-lies-inside-a-polygon/">Xác định điểm có nằm trong đa giác không</a></li>
+                </ul>
+            </div>
+            
+            <h2>Chọn bài giảng để xem video</h2>
+            <select id="lectures" name="lectures" class="resource-select" onchange="updateVideo()">
+                <option value="" disabled selected>Chọn bài giảng</option>
+                <option value="lc1">1. Thuật toán tìm kiếm (Searching Algorithms)</option>
+                <option value="lc2">2. Thuật toán sắp xếp (Sorting Algorithms)</option>
+                <option value="lc3">3. Thuật toán chia để trị (Divide and Conquer)</option>
+                <option value="lc4">4. Thuật toán tham lam (Greedy Algorithms)</option>
+                <option value="lc5">5. Thuật toán quy hoạch động (Dynamic Programming - DP)</option>
+                <option value="lc6">6. Thuật toán đồ thị (Graph Algorithms)</option>
+                <option value="lc7">7. Thuật toán lý thuyết số (Number Theory)</option>
+                <option value="lc8">8. Thuật toán chuỗi (String Algorithms)</option>
+            </select>
 
             <p id="lesson-detail"></p>
 
-            <!-- Video YouTube sẽ được nhúng vào đây -->
-            <div id="video-container">
-                <iframe id="video-player" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+            <section id="video-container">
+                <iframe id="video-player" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            </section>            
+
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Tài nguyên học C++</p>
+        <p>&copy; 2025 Những thứ tôi biết về C++ - Nguyễn Văn Nam - <a href="mailto:vn5753378@gmail.com" style="color: white;">vn5753378@gmail.com</a></p>
     </footer>
 
-    <!-- Thêm thẻ script tham chiếu đến tn.js -->
     <script src="tn.js"></script>
 </body>
 </html>
