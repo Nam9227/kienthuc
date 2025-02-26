@@ -1,26 +1,21 @@
-// Mảng lưu URL video YouTube cho mỗi bài giảng
+
 const videoLinks = {
-    lesson1: "https://www.youtube.com/embed/ILr_rU-lISk", // Video chuẩn cho bài giảng 1
-    lesson2: "https://www.youtube.com/embed/Fs54vl76E84", // Video chuẩn cho bài giảng 2
-    lesson3: "https://www.youtube.com/embed/O0Q5K0m6mvY", // Video chuẩn cho bài giảng 3
-    lesson4: "https://www.youtube.com/embed/tSBR3R-6egg", // Video mẫu cho bài giảng 4
-    lesson5: "https://www.youtube.com/embed/L-BabT96Zmk"  // Video mẫu cho bài giảng 5
+    lc1: "https://www.youtube.com/embed/dB2DWSKGLj8?si=C2X8pnPXup63_vqj", 
+    lc2: "https://www.youtube.com/embed/8GRA1EMUaSI?si=6bshh459xJUUF0FV", 
+    lc3: "https://www.youtube.com/embed/ijPcVX8fqjA?si=5-Oi9UXN0XVJA1iV", 
+    lc4: "https://www.youtube.com/embed/1D-BC82FdZM?si=Lz5W7Z1p6WehU340", 
+    lc5: "https://www.youtube.com/embed/FcPcQ7bccxM?si=n74v7qDiMLY27gwm", 
+    lc6: "https://www.youtube.com/embed/JAlNXyfe-p4?si=7ygXkhgyu1IQm0Z-", 
+    lc7: "https://www.youtube.com/embed/rd7lhHLuRfI?si=RKAXKJ227WaFEP4c", 
+    lc8: "https://www.youtube.com/embed/AwBY3AkQO3M?si=FfV0JuqhRA-wd9-G", 
 };
 
-// Hàm để hiển thị bài giảng đã chọn
-function showSelectedLesson() {
-    var select = document.getElementById("lectures");
-    var selectedLesson = select.options[select.selectedIndex].text;
-    document.getElementById("lesson-detail").innerHTML = "Bạn đã chọn: " + selectedLesson;
-}
-
-// Cập nhật video khi người dùng chọn bài giảng
 function updateVideo() {
     var select = document.getElementById("lectures");
     var selectedValue = select.value; 
     var videoUrl = videoLinks[selectedValue]; 
 
-    // Cập nhật src của iframe để nhúng video mới
+    
     var iframe = document.getElementById("video-player");
-    iframe.src = videoUrl;
+    iframe.src = videoUrl; 
 }
